@@ -1,0 +1,51 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/fond1.jpg");
+  background-size: cover;
+}
+
+svg {
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+#mercure {
+  animation: orbit 5s linear infinite;
+  transform-origin: center;
+}
+#venus {
+  animation: orbit 12s linear infinite;
+  transform-origin: center;
+}
+#terre_lune {
+  animation: orbit 19s linear infinite;
+  transform-origin: center;
+}
+
+#terre_lune{
+  animation: orbit 5s linear infinite;
+}
+
+
+@keyframes orbit {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
+}
+
+@keyframes orbitMoon {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(359deg);
+  }
+}
